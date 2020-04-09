@@ -1,0 +1,10 @@
+
+<div>
+    <div style="float: left;">
+        <p-tree [value]="treeNodes" selectionMode="single" [filter]="true" (onNodeSelect)="nodeSelect($event)"></p-tree>
+    </div>
+    <div>
+        <iframe id="reportRenderFrame" seamless scrolling="no" width="80%" height="800px" [src]="reportUrl"></iframe>
+    </div>
+</div>
+

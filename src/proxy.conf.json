@@ -1,0 +1,8 @@
+{
+    "/TPMS/*": {
+        "target": "http://localhost:34049",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": true
+    }
+}
