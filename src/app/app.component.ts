@@ -8,5 +8,17 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'ReportMenu';
+  userName:string;
+  password:string;
+  errorMsg:string;
   constructor(public router:Router){}
+  login(){
+    if(this.userName=="Admin"&&this.password=="Admin"){
+      localStorage.setItem("isAuthorized","true");
+    }
+    else{
+      localStorage.setItem("isAuthorized","false");
+      this.errorMsg="Invalid Credentials";
+    }
+  }
 }

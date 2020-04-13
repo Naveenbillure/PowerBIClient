@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {FormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ReportsComponent } from './reports/reports.component';
@@ -31,7 +31,8 @@ export function powerBiServiceFactory() {
         ButtonModule,
         ContextMenuModule,
         TabViewModule,
-CodeHighlighterModule
+CodeHighlighterModule,
+FormsModule
   ],
   providers: [{ provide: 'PowerBIService', useFactory: powerBiServiceFactory }],
   bootstrap: [AppComponent]

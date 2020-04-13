@@ -1,4 +1,11 @@
 <div>
   <button (click)="router.navigate(['/Reports'])"><h2>Reports</h2></button>  
 </div>
+<label>User Name:</label>
+<input type="text" id="userName" [(ngModel)]="userName"/>
+<br/>
+<label>Password:</label>
+<input type="password" id="pwd" [(ngModel)]="password"/>
+<br/>
+<button (click)="login()" value="Login">Login</button>
 <router-outlet></router-outlet>
